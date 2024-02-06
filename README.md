@@ -47,3 +47,10 @@
 
 **Dashboard**
 *  Visualize 메뉴에서 만들어진 시각화 도구들을 조합해서 대시보드 화면을 만들고 저장, 불러오기 등을 할 수 있는 메뉴
+
+## Observability
+### Metricbeat
+
+> **Collects metrics from the operating system and from
+services running on the server**
+>
