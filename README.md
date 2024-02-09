@@ -32,7 +32,23 @@
 **Multitenancy**
 * 서로 다른 인덱스들을 별도의 커넥션 없이 하나의 질의로 묶어서 검색, 검색 결과들을 하나의 출력으로 도출
 
+- 프로그램과 인스턴스의 차이
+    - 인스턴스 : 프로그램 실행시 메모리에 올라가 있는 상태. 실행되고 있는 것. 서비스가 되고 있는 상태
+- **node** : instance of ES (실행중인 상태)
+    - 데이터 저장, 제어, 수집 처리 등 node들은 역할에 따라 나누고 합할 수 있음.
+- **cluster** : collection of ES nodes
+- **document** : a serialized JSON object
+- 설치 환경
+    - on-premises : 물리적인 하드웨어에 설치
+    - cloud : 가상화 환경 위에 설치(ex. kubernetes)
+    - hybrid : 하나는 cloud, 하나는 on premises
 
+### DSL
+#### GET
+
+- `GET /`  : request to ES returns basic details about the cluster
+- `GET _cat/indices` : displays the current indexes in the cluster
+- `GET {dataset}/_search` : "match all" query that returns 10 documents in an index
 
 
 ## Kibana
